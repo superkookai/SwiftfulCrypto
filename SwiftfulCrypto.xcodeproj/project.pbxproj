@@ -11,6 +11,7 @@
 		BF73FB182B26C9560078E693 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73FB172B26C9560078E693 /* CoinRowView.swift */; };
 		BF73FB1A2B26CB020078E693 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73FB192B26CB020078E693 /* PreviewProvider.swift */; };
 		BF73FB1C2B26D6AF0078E693 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73FB1B2B26D6AF0078E693 /* Double.swift */; };
+		BF73FB1E2B26E4230078E693 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73FB1D2B26E4230078E693 /* HomeViewModel.swift */; };
 		BF7466742B20446C001D839A /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7466732B20446C001D839A /* SwiftfulCryptoApp.swift */; };
 		BF7466762B20446C001D839A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7466752B20446C001D839A /* ContentView.swift */; };
 		BF7466782B20446D001D839A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7466772B20446D001D839A /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		BF73FB172B26C9560078E693 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		BF73FB192B26CB020078E693 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		BF73FB1B2B26D6AF0078E693 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		BF73FB1D2B26E4230078E693 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BF7466702B20446C001D839A /* SwiftfulCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7466732B20446C001D839A /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
 		BF7466752B20446C001D839A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		BF7466872B204DDE001D839A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BF73FB1D2B26E4230078E693 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF73FB182B26C9560078E693 /* CoinRowView.swift in Sources */,
+				BF73FB1E2B26E4230078E693 /* HomeViewModel.swift in Sources */,
 				BF7466762B20446C001D839A /* ContentView.swift in Sources */,
 				BF7466892B204E14001D839A /* HomeView.swift in Sources */,
 				BF7466742B20446C001D839A /* SwiftfulCryptoApp.swift in Sources */,
