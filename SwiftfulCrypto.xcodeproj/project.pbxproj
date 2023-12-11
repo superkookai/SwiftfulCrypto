@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF73FB162B26BF2A0078E693 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF73FB152B26BF2A0078E693 /* CoinModel.swift */; };
 		BF7466742B20446C001D839A /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7466732B20446C001D839A /* SwiftfulCryptoApp.swift */; };
 		BF7466762B20446C001D839A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7466752B20446C001D839A /* ContentView.swift */; };
 		BF7466782B20446D001D839A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7466772B20446D001D839A /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF73FB152B26BF2A0078E693 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		BF7466702B20446C001D839A /* SwiftfulCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7466732B20446C001D839A /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
 		BF7466752B20446C001D839A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF73FB142B26BEFB0078E693 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF73FB152B26BF2A0078E693 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BF7466672B20446C001D839A = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		BF7466722B20446C001D839A /* SwiftfulCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				BF73FB142B26BEFB0078E693 /* Models */,
 				BF7466842B204DC6001D839A /* Core */,
 				BF7466812B20495A001D839A /* Extensions */,
 				BF7466732B20446C001D839A /* SwiftfulCryptoApp.swift */,
@@ -211,6 +222,7 @@
 				BF74668D2B2050D5001D839A /* CircleButtonView.swift in Sources */,
 				BF7466832B204988001D839A /* Color.swift in Sources */,
 				BF74668F2B205775001D839A /* CircleButtonAnimationView.swift in Sources */,
+				BF73FB162B26BF2A0078E693 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
