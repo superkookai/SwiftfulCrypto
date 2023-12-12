@@ -6,15 +6,36 @@
 //
 
 import Foundation
+import Combine
 
 class HomeViewModel: ObservableObject{
     @Published var allCoins: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
     
+    private let dataService = CoinDataService()
+    private var cancellables = Set<AnyCancellable>()
+    
     init(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
-            self.allCoins.append(DeveloperPreview.instance.coin)
-            self.portfolioCoins.append(DeveloperPreview.instance.coin)
+//        addSubcribers()
+        Task{
+            await getAllCoins()
+        }
+    }
+    
+    func addSubcribers(){
+        dataService.$allCoins
+            .sink { [weak self] returnCoins in
+                self?.allCoins = returnCoins
+            }
+            .store(in: &cancellables)
+    }
+    
+    @MainActor
+    func getAllCoins() async {
+        do{
+            self.allCoins = try await dataService.getCoinsAsync()
+        }catch{
+            print("DEBUG: \(error.localizedDescription)")
         }
     }
 }
